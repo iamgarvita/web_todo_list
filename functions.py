@@ -14,11 +14,11 @@ def strength(password):
         return ("Weak Password")
 
 def read_file():
-    with open("/Users/garvitagangwal/Desktop/Python Projects/to-do list/todoss/todos.txt", "r") as file:
+    with open("todos.txt", "r") as file:
         todos=file.readlines()
         return todos
         
 def write_files(todoss):
-    with open("/Users/garvitagangwal/Desktop/Python Projects/to-do list/todoss/todos.txt", "w") as file:
+    with open("todos.txt", "w") as file:
         file.writelines(todoss)
         return todoss
